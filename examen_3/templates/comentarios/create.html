@@ -1,0 +1,14 @@
+<form method="POST">
+	{% csrf_token %}
+
+
+	<input type="text" name="user" value="{{user.username}}" hidden="">
+	
+	{{form.titulo}}
+	{{form.categoria}}
+	{{form.contenido}}
+	{{form.calificacion}}
+	
+	<p><input type="submit" value="Crear"><p>
+
+</form>
