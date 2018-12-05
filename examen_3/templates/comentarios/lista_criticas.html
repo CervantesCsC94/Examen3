@@ -10,7 +10,7 @@
 
 {% block content %}
 
-<div class="container-fluid">
+<div class="container-fluid" >
 <h1>Criticas {{categoria}}</h1><br>
 
 <div class="list-group" id="criticas">
@@ -24,7 +24,6 @@
 					      <h5 class="mb-1">{{critica.titulo}}</h5>
 					      <small>{{critica.timestap}}</small>
 				    </div>
-						   <p class="mb-1">{{critica.contenido}}</p>
 						   <small>{{critica.user}}</small>
 	  			</a>	
   			{% endif %}

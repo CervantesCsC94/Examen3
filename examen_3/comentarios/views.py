@@ -31,7 +31,7 @@ def lista_criticas(request,id=1):
 class Create(generic.CreateView):
  	template_name="comentarios/create.html"
  	model=Critica
- 	fields=["user","titulo","categoria","contenido","calificacion"]
+ 	fields=["user","titulo","categoria","contenido"]
  	success_url="/categorias"
 
 class DetailTrabajo(generic.DetailView):

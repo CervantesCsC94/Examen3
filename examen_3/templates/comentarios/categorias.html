@@ -32,7 +32,7 @@ $(document).ready(function(){
 
 <div class="row">
   <div class="col-sm-4">
-	  <div class="card text-white bg-success mb-3 " style="width: 18rem;">
+	  <div class="card text-white bg-success mb-3 " style="width: 18rem; box-shadow: #999 0px 10px 10px;">
 	  
 	  <div class="card-header">
 	    Categorias
@@ -46,14 +46,14 @@ $(document).ready(function(){
 		   {% endfor %}  
 
 		  </ul>
-		  <div class="card-footer bg-transparent borderlight"><a id="crear" href="">Crear Entrada</a></div>
+		  <div class="card-footer bg-transparent borderlight"><a style="color: white; padding: 10px; border: 1px solid white;" class="card-link" id="crear" href="{% url 'comentarios:create_view' %}">Crear Entrada</a></div>
 	  </div><!--AQUI TERMINA LA CARTA-->
 
   </div><!--AQUI TERMINA LA COLUMNA SM - 4-->
 
 
 
-  <div class="col-sm-8 cont-estilo" id="contenidos">col-sm-4
+  <div class="col-sm-8 cont-estilo" id="contenidos">
   
 
   			
@@ -80,7 +80,6 @@ $(document).ready(function(){
  	 
 
 <br>
-<a href=""> Subir Trabajo</a>
 
 
 

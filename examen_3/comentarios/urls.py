@@ -15,7 +15,6 @@ urlpatterns = [
     path('categorias/',views.ListaCategorias.as_view(),name="categorias_view"),
     path('categorias/crear/',views.Create.as_view(), name="create_view"),
     path('criticas/<int:id>',views.lista_criticas,name='criticas_view'),
-
     path('detail_critica/<int:pk>',views.DetailTrabajo.as_view(),name="detail_view"),
     
 ]
