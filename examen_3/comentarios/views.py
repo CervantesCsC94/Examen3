@@ -16,7 +16,7 @@ class registroUsuario(generic.CreateView):
 	model=User
 	template_name='comentarios/registro.html'
 	form_class=UserCreationForm
-	succes_url='/'
+	succes_url = "/"
 
 class ListaCategorias(generic.ListView):
 	model=Categoria

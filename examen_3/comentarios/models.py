@@ -1,6 +1,6 @@
 from django.db import models
 from django.conf import settings
-from django.contrib.auth import get_user_model
+
 # Create your models here.
 
 class Categoria(models.Model):
@@ -17,7 +17,6 @@ class Categoria(models.Model):
 class Critica(models.Model):
 	#user=models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 	#user=models.ForeignKey(get_user_model(),on_delete=models.CASCADE)
-	slug=models.SlugField(max_length=150, blank=True)
 	user=models.CharField(max_length=100)
 	titulo=models.CharField(max_length=100)
 	categoria=models.ForeignKey(Categoria, null=True, blank=True, on_delete=models.CASCADE)
